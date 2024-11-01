@@ -1,0 +1,467 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --margenTarjetas: 5rem auto 10rem auto;
+  --colorCrema: #f1d68f;
+  --lineas: #ebebeb;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff00;
+  z-index: 5;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  transition: background-color 1s;
+}
+
+.fondo-barra {
+  background-color: #fff;
+}
+
+.fondo-barra > ul > li > a {
+  color: #000;
+  text-shadow: 1px 1px white, 2px 3px #808080;
+}
+
+header {
+  background-size: 100%;
+  background-image: url(./img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+#header-his {
+  background-size: 100%;
+  background-image: url(./img/historia-programacion.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+#header-jue {
+  background-size: 100%;
+  background-image: url(./img/img2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.img-enc {
+  height: 70rem;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40%;
+  margin: auto;
+  font-size: 4.2rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 0px #000;
+}
+
+.bot-nav {
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 0px #808080;
+}
+
+.bot-nav:hover {
+  transform: translate(3px, 3px);
+  text-shadow: none;
+}
+
+.tarjetas-ho {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tarjeta-ho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 2.4rem;
+  justify-content: center;
+  font-weight: 300;
+  box-shadow: 4px 4px 10px 2px #ebebeb;
+  margin: 2rem;
+}
+
+.titulo-trj {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 5rem;
+  text-shadow: 3px 3px 0 #bcbcbc;
+}
+
+.img-trj {
+  height: 20rem;
+  width: 30rem;
+}
+
+.texto-img {
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+.btn-tarjeta {
+  background-color: #000;
+  text-align: center;
+  padding: 0.7rem 0;
+  color: #fff;
+  width: 16rem;
+  height: 2.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 2rem;
+  border-radius: 4px;
+}
+
+/************
+HISTORIA
+*************/
+
+.prog-contenedor {
+  box-shadow: inset 0 0 0 2px #000;
+  width: 20rem;
+  height: 24rem;
+  margin: 5rem auto;
+  overflow: hidden;
+}
+
+.prog-ul {
+  display: flex;
+  list-style: none;
+  width: 300%;
+}
+
+.prog-li {
+  width: 20rem;
+}
+
+.prog-img {
+  width: 50%;
+}
+
+.tarjetas-his {
+  margin: var(--margenTarjetas);
+  max-width: 90vw;
+}
+
+.tarjeta-his {
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 2.4rem;
+  justify-content: center;
+  font-weight: 300;
+  box-shadow: 4px 4px 10px 2px #ebebeb;
+  margin: 2rem;
+}
+
+.encab-img {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 300;
+  padding-bottom: 2.4rem;
+  text-shadow: 2px 2px 0px #808080;
+}
+
+.artic-img {
+  margin: 0 2.4rem;
+}
+
+/****************
+VIDEO
+****************/
+
+.area-vid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  gap: 80px;
+}
+
+.barra {
+  background-color: var(--colorCrema);
+  border-radius: 10px;
+  padding: 20px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botonera {
+  display: flex;
+  gap: 20px;
+}
+
+.reproductor {
+  padding: 5px;
+  background-color: var(--colorCrema);
+  width: 70%;
+}
+
+#play,
+#pause {
+  width: 80px;
+}
+
+.botones-vid:active {
+  box-shadow: 0px 0px darkgray;
+  transform: translate(3px, 2px);
+}
+
+#reloj-video {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+/**************
+JUEGO
+**************/
+
+.encab-img-jue {
+  text-align: center;
+  justify-self: center;
+  font-size: 4rem;
+  font-weight: 400;
+  padding-bottom: 2.4rem;
+  width: 80vw;
+  text-shadow: 2px 2px 0px #808080;
+}
+
+.tit-gr {
+  font-size: 6rem;
+}
+
+.juego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zona-dej {
+  display: flex;
+  flex-direction: row;
+}
+
+.dej {
+  width: 275px;
+  height: 400px;
+  display: flex;
+  border: 2px solid black;
+  background-color: var(--colorCrema);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.dej:hover {
+  background-color: grey;
+}
+
+.dej:hover > p {
+  color: var(--colorCrema);
+}
+
+.zona-arr {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 40px;
+}
+
+#arr1,
+#arr2,
+#arr3 {
+  width: 27rem;
+  height: 40rem;
+}
+
+.reinicio {
+  display: flex;
+  justify-self: right;
+  justify-content: center;
+  align-items: center;
+  margin: 0 16rem 9rem 0;
+  width: 12rem;
+  height: 3.2rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #000;
+  color: var(--colorCrema);
+  text-transform: uppercase;
+}
+
+/**************
+PIE
+**************/
+
+.cont-pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15rem;
+  background-color: #1a1a1a;
+}
+
+.flechas {
+  height: 4rem;
+  color: var(--lineas);
+}
+
+.texto-pie {
+  color: var(--lineas);
+}
+
+/*************
+ANIMACIÓN LOGO
+*************/
+
+svg {
+  animation: icono 2s;
+  animation-iteration-count: 1;
+}
+
+.compu1 {
+  animation: part_1 5s;
+  animation-iteration-count: 1;
+}
+
+.compu2 {
+  animation: part_2 5s;
+  animation-iteration-count: 1;
+}
+line.lineas {
+  animation-name: codigo;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes icono {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  90% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  95% {
+    transform: translate(100px, 0);
+    opacity: 1;
+  }
+
+  98% {
+    transform: translate(-90px, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes part_1 {
+  0% {
+    transform: translate(0, -10px);
+    opacity: 0;
+  }
+  20% {
+    transform: translate(0, -10px);
+    opacity: 0;
+  }
+  30% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes part_2 {
+  0% {
+    transform: translate(0, -10px);
+    opacity: 0;
+  }
+  30% {
+    transform: translate(0, -10px);
+    opacity: 0;
+  }
+  40% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes codigo {
+  from {
+    stroke: transparent;
+  }
+  to {
+    stroke: green;
+  }
+}

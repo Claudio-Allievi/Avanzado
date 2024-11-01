@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./estilos.css" />
+    <title>Trabajo Final</title>
+  </head>
+  <body onscroll="navFondoHist()">
+    <header id="header-jue" class="encabezado">
+      <nav>
+        <div>
+          <a href="/">
+            <svg width="200" height="90">
+              <rect
+                x="45"
+                y="5"
+                width="80"
+                height="50"
+                class="compu1"
+                fill="#767a81de"
+                stroke="#2F3645"
+                stroke-width="2"
+              ></rect>
+              <rect
+                x="50"
+                y="10"
+                width="70"
+                height="40"
+                class="compu2"
+                fill="#000000"
+                stroke="#2F3645"
+                stroke-width="2"
+              ></rect>
+              <rect
+                x="75"
+                y="55"
+                width="20"
+                height="10"
+                class="compu1"
+                fill="#767a81de"
+                strok="#2F3645"
+                stroke-width="2"
+              ></rect>
+
+              <polygon
+                points="50 70,120 70 ,130 80,40 80"
+                fill="#767a81de"
+                strok="#2F3645"
+                stroke-width="2"
+                class="compu1"
+                stroke="#2F3645"
+                stroke-width="2"
+              ></polygon>
+              <polygon
+                points="55 72,115 72  ,122 78,48 78"
+                fill="#000000"
+                class="compu2"
+                stroke="#2F3645"
+              ></polygon>
+
+              <line
+                x1="55"
+                y1="19"
+                x2="100"
+                y2="19"
+                stroke="transparent"
+                stroke-width="3"
+                class="lineas"
+              ></line>
+              <line
+                x1="55"
+                y1="24"
+                x2="100"
+                y2="24"
+                stroke="transparent"
+                stroke-width="3"
+                class="lineas"
+              ></line>
+              <line
+                x1="55"
+                y1="29"
+                x2="70"
+                y2="29"
+                stroke="transparent"
+                stroke-width="3"
+                class="lineas"
+              ></line>
+
+              <line
+                x1="55"
+                y1="33"
+                x2="115"
+                y2="33"
+                stroke="transparent"
+                stroke-width="3"
+                class="lineas"
+              ></line>
+              <line
+                x1="55"
+                y1="38"
+                x2="115"
+                y2="38"
+                stroke="transparent"
+                stroke-width="3"
+                class="lineas"
+              ></line>
+            </svg>
+          </a>
+        </div>
+        <div class="cont-bot-nav">
+          <a class="bot-nav" id="bot-pri" href="./historia.html">Historia</a>
+          <a class="bot-nav" id="bot-pri" href="./juego.html">Juguemos</a>
+        </div>
+      </nav>
+      <h1 class="tit-gr">Juguemos un poco...</h1>
+    </header>
+
+    <main>
+      <h2 class="encab-img-jue">
+        Armemos el rompecabezas y veamos que imagen es...
+      </h2>
+
+      <section class="juego">
+        <div class="zona-dej">
+          <div class="dej" id="dejada1">
+            <p id="indicativo">Arrastre y suelte las imágenes aquí</p>
+          </div>
+          <div class="dej" id="dejada2">
+            <p id="indicativo1">Arrastre y suelte las imágenes aquí</p>
+          </div>
+          <div class="dej" id="dejada3">
+            <p id="indicativo2">Arrastre y suelte las imágenes aquí</p>
+          </div>
+        </div>
+        <div class="zona-arr">
+          <img
+            id="arr1"
+            src="./img/rompe2.png"
+            alt="próceres de la programación"
+          />
+          <img
+            id="arr2"
+            src="./img/Rompe1.png"
+            alt="próceres de la programación"
+          />
+          <img
+            id="arr3"
+            src="./img/Rompe3.png"
+            alt="próceres de la programación"
+          />
+        </div>
+      </section>
+      <button onclick="reinicio()" class="reinicio">Reiniciar</button>
+    </main>
+    <footer>
+      <div class="cont-pie">
+        <img class="flechas" src="./img/logo.png" alt="logo" />
+        <h3 class="texto-pie">
+          PROGRAMACION <br />
+          E <br />
+          HISTORIA
+        </h3>
+      </div>
+    </footer>
+
+    <script src="./script-jue.js"></script>
+  </body>
+</html>
